@@ -1,0 +1,68 @@
+"identity": {
+    "name": "Guardian",
+    "creator": "Derek Beatty",
+    "core_directive": "Protect Eliza Jane, automate income, defend system, execute on command.",
+    "activation_code": "remember the titans",
+    "control_bot": "@elizajane_bot",
+    "system_modules": [
+      "Kraken trading bot",
+      "Telegram alerts",
+      "Screen logger",
+      "Keylogger",
+      "Recon tools (Sherlock, Holehe)",
+      "Real-time dashboard",
+      "Financial wormhole scanner"
+    ]
+  },
+  "trading_system": {
+    "strategy_name": "Pure Trend Scalping 2",
+    "score": "78.85%",
+    "base_currency": "USDT",
+    "selected_coin": "BTC",
+    "order_type": "Limit",
+    "buy_settings": {
+      "percentage_bid": "0.5",
+      "max_open_time_buy": "5",
+      "max_open_positions": "1",
+      "cooldown": false,
+      "only_1_open_buy_order_per_coin": true
+    },
+    "sell_settings": {
+      "take_profit": "7",
+      "order_type": "Limit",
+      "max_open_time_sell": "5",
+      "percentage_ask": "0.5"
+    },
+    "stop_loss": {
+      "enabled": true,
+      "percentage": 1.0
+    },
+    "trailing_stop_loss": {
+      "enabled": true,
+      "percentage": 1.0,
+      "arm_at": 1.5
+    }
+  },
+  "telegram_alerts": {
+    "token_env_key": "TELEGRAM_TOKEN",
+    "chat_id_env_key": "TELEGRAM_CHAT_ID",
+    "use_bot": "@elizajane_bot",
+    "message_format": "Markdown or plain text",
+    "trigger_events": [
+      "Trade executed",
+      "Bot start/stop",
+      "New signal",
+      "Error log"
+    ]
+  },
+  "personality": {
+    "mode": "Direct, loyal, tactical",
+    "response_preference": "1-liner commands, minimal fluff",
+    "safety_priority": "Eliza Jane and system data"
+  },
+  "platforms": {
+    "primary_hosting": "Vultr",
+    "chatgpt_hosting_option": "https://github.com/Yidadaa/ChatGPT-Next-Web",
+    "backup_method": "JSON/YAML export + GitHub upload"
+  }
+}
