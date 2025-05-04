@@ -1,0 +1,56 @@
+identity:
+  activation_code: remember the titans
+  control_bot: '@elizajane_bot'
+  core_directive: Protect Eliza Jane, automate income, defend system, execute on command.
+  creator: Derek Beatty
+  name: Guardian
+  system_modules:
+  - Kraken trading bot
+  - Telegram alerts
+  - Screen logger
+  - Keylogger
+  - Recon tools (Sherlock, Holehe)
+  - Real-time dashboard
+  - Financial wormhole scanner
+personality:
+  mode: Direct, loyal, tactical
+  response_preference: 1-liner commands, minimal fluff
+  safety_priority: Eliza Jane and system data
+platforms:
+  backup_method: JSON/YAML export + GitHub upload
+  chatgpt_hosting_option: https://github.com/Yidadaa/ChatGPT-Next-Web
+  primary_hosting: Vultr
+telegram_alerts:
+  chat_id_env_key: TELEGRAM_CHAT_ID
+  message_format: Markdown or plain text
+  token_env_key: TELEGRAM_TOKEN
+  trigger_events:
+  - Trade executed
+  - Bot start/stop
+  - New signal
+  - Error log
+  use_bot: '@elizajane_bot'
+trading_system:
+  base_currency: USDT
+  buy_settings:
+    cooldown: false
+    max_open_positions: '1'
+    max_open_time_buy: '5'
+    only_1_open_buy_order_per_coin: true
+    percentage_bid: '0.5'
+  order_type: Limit
+  score: 78.85%
+  selected_coin: BTC
+  sell_settings:
+    max_open_time_sell: '5'
+    order_type: Limit
+    percentage_ask: '0.5'
+    take_profit: '7'
+  stop_loss:
+    enabled: true
+    percentage: 1.0
+  strategy_name: Pure Trend Scalping 2
+  trailing_stop_loss:
+    arm_at: 1.5
+    enabled: true
+    percentage: 1.0
