@@ -1,0 +1,13 @@
+[Unit]
+Description=Guardian AI Loader
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /root/guardian_ai_loader.py
+WorkingDirectory=/root
+Restart=always
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
